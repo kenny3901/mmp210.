@@ -17,10 +17,10 @@ function draw() {
 	fill(r, g, b);
 //eyes
     background("#0FFF00");
-    fill("#77640E");
+    fill(r,g,b);
     stroke("#000000");
     strokeWeight(10);
-    ellipse(x,y,50,50);
+    ellipse(x+100,y,50,50);
     ellipse(x,y,50,50);
 //mouth
     fill(r,g,b);
@@ -36,7 +36,8 @@ function draw() {
     
     fill("#000000");
     triangle(100, 325, 400, 325, 250, 400);
-fill("#000000")    
-rect(130, 370, 50, 200);
-rect(300, 375, 50, 200);}
+fill(r,b,g)    
+rect(x+100, y+300, 50, 200);
+rect(x, y+300, 50, 200);
+}
 
