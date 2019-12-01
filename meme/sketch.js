@@ -10,7 +10,7 @@ function setup(){
 
 function draw(){
     
-    image(img,0,0, width, height);
+    image(img,50,50, width, height);
     textSize(20);
     text("When you call someone a boomer", 20, 20);
     
