@@ -7,31 +7,39 @@ function setup() {
 }
 
 function draw() {
-   var eye = 25;
-    var eye2 = 100;
+   var leftEyeSize = 25;
+    var rightEyeSize = 100;
     var headsize = 200;
+    var x = 250;
+    var y = 50;
+    var X = 150;
+    var Y = 200;
+    var z = 300;
+    var Z = 100;
+    var a = 325;
+    var A = 400;
 //eyes
     background("#0FFF00");
     fill("#77640E");
     stroke("#000000");
     strokeWeight(10);
-    ellipse(200,150,eye);
-    ellipse(300,150,eye2);
+    ellipse(Y,X,leftEyeSize);
+    ellipse(z,X,rightEyeSize);
 //mouth
     fill("#000000");
     noStroke();
-    ellipse(250,250, 50, 50);
+    ellipse(x,x, y, y);
 //head
     noFill();
     stroke("#000000");
     strokeWeight(10);
-    ellipse(250, 200, headsize);
+    ellipse(x, Y, headsize);
 //eyebrow
-    triangle(300, 100, 300, 100, 200, 100);
+    triangle(z, Z, z, Z, Y, Z);
     
     fill("#000000");
-    triangle(100, 325, 400, 325, 250, 400);
+    triangle(Z, a, A, a, x, A);
 fill("#000000")    
-rect(130, 370, 50, 200);
-rect(300, 375, 50, 200);}
+rect(130, 370, y, Y);
+rect(z, 375, y, Y);}
 
