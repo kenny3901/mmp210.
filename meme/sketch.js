@@ -1,18 +1,17 @@
 var img;
 
 function preload() {
-    img = loadImage("dab.jpeg");
+	img = loadImage("dab.jpg");
 }
 
-function setup(){
-    createCanvas(640, 480);
+function setup() {
+    createCanvas(796, 796);
 }
 
 function draw(){
-    
-    image(img,50,50, width, height);
-    textSize(20);
-    text("When you call someone a boomer", 20, 20);
-    
-
+	image(img, 0, 0);
+    textSize(40);
+    stroke('white');
+    strokeWeight(30);
+    text("When you call someone a boomer", 60, 60);
 }
