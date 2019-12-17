@@ -13,7 +13,7 @@ function setup() {
 function draw(){
 	image(img2, 0, 0);
     textSize(40);
-    text("If water is wet",10,50);
+    text("If water is wet",10,40);
 if (mouseIsPressed)
     image (img,0,0);
     
