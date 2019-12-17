@@ -1,4 +1,7 @@
 var r, g, b;
+var x = 100;
+var y = 100;
+var speed = 7;
 
 function preload() {
     img = loadImage("2.jpg");
@@ -29,5 +32,11 @@ function draw() {
         image(img, 0, 0);
     fill(r,g,b)
     textSize(100);
-    text("OOGA BOOGA", 125, 100);
-}
+    text("OOGA BOOGA", x, 100);
+    ellipse(x, 600, 100);
+    ellipse(x,700,100);
+	x += speed;
+	if (x > width || x < 2) {
+		speed *= -1;
+	}
+    }
